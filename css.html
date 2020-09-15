@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <title>CSS</title>
         <link rel="stylesheet" href="styles.css">
         <meta name="author" description="Dylan Gordon">
@@ -15,7 +17,53 @@
             <li><a href="css.html">CSS</a></li>
             <li><a href="javascript.html">Javascript</a></li>
         </ul>
-        <!-- Introduction explaining to click on the links above to see how different languages work -->
+        <br>
+        <div style="width: 50%;margin: 0 auto;">
+            <div style="display:inline-block;vertical-align: top;">
+                <img class="center" src="pictures/ExampleCssCode.PNG">
+            </div>
+            <div style="display:inline-block;">
+                <p style="width:50%">This code snippet turns the very ugly default style of a elements into something much nicer.
+                     The navbar you see above is actually just 4 href's in an unordered list. Styling can make a huge difference.</p>
+            </div>
+        </div>
+        <br>
+
+        <!-- Table with different css elements that can be used -->
+        <table class="center darkTheme">
+            <tr class="header">
+                <th>CSS Selector</th>
+                <th>Purpose</th>
+                <th>Example code</th>
+            </tr>
+
+            <tr>
+                <td>.</td>
+                <td>Used to select classes in your html page</td>
+                <td><code>.classA { ... }  -> will select <b>ALL</b> classA's in your html file and adjust their style <br>
+                table.classA { ... } -> will only select tables that have classA listed as one of their classes.</code></td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>Used to select ids in your html page</td>
+                <td><code>#idA { ... }  -> will select <b>ALL</b> idA's in your html file and adjust their style <br>
+                table.idA { ... } -> will only select tables that have idA listed as one of their classes.</code></td>
+            </tr>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Used to select all elements</td>
+                <td><code>* { font-size: 12px; } -> will change the font-size of all elements to be 12 pixels.</code></td>
+            </tr>
+            <tr>
+                <td>:hover</td>
+                <td>Used to specify styles for an element when the item is hovered on. Ex: Hover over elements in this table.</td>
+                <td><code>table.darkTheme tr:hover { <br>
+                    background-color: #575656; <br>
+                }
+                </code></td>
+            </tr>
+        </table>
     </body>
 
 </html>

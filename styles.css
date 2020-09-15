@@ -3,6 +3,12 @@ body{
     margin: 0;
 }
 
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -34,4 +40,33 @@ a {
 
 a:hover {
     background-color: #686565
+}
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.darkTheme {
+    border-collapse: collapse; /* Collapse borders */
+    width: 80%; /* Full-width */
+    border: 3px solid #575656; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+    background-color: #313030;
+}
+
+table.darkTheme th, table.darkTheme td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+    color: whitesmoke;
+}
+
+table.darkTheme tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #575656;
+}
+
+table.darkTheme tr.header, table.darkTheme tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #575656;
 }
